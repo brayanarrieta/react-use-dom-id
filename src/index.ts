@@ -1,3 +1,3 @@
-import HelloWorld from './HelloWorld';
+import useId from './useId';
 
-export { HelloWorld };
+export { useId };
