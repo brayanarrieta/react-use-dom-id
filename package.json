@@ -1,0 +1,80 @@
+{
+  "name": "npm-typescript-react-library-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "cjs": "dist/cjs/index.js",
+  "esm": "dist/esm/index.js",
+  "es": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "commit": "cz",
+    "clean": "del ./dist/*",
+    "lint": "eslint '**/*.ts'",
+    "lint:fix": "eslint '**/*.ts' --fix",
+    "test": "jest --passWithNoTests",
+    "release": "semantic-release",
+    "build:ts": "rollup -c",
+    "build:types": "tsc",
+    "build": "npm run clean && npm run build:types && npm run build:ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brayanarrieta/npm-typescript-react-library-template.git"
+  },
+  "keywords": [],
+  "author": "brayanarrieta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brayanarrieta/npm-typescript-react-library-template/issues"
+  },
+  "homepage": "https://github.com/brayanarrieta/npm-typescript-react-library-template#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "@rollup/plugin-typescript": "^8.3.0",
+    "@saithodev/semantic-release-backmerge": "^2.1.1",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@types/jest": "^27.4.0",
+    "@types/react": "^16.14.23",
+    "@types/react-dom": "^16.9.14",
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "del-cli": "^4.0.1",
+    "eslint": "^8.9.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-import-resolver-typescript": "^2.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "jest": "^27.5.1",
+    "prop-types": "^15.8.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "rollup": "^2.68.0",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-visualizer": "^5.5.4",
+    "semantic-release": "^19.0.2",
+    "typescript": "^4.5.5"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.8.1",
+    "react": "^16.12.0 || ^17",
+    "react-dom": "^16.12.0 || ^17"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

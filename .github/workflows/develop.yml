@@ -1,0 +1,28 @@
+name: Develop Build
+
+on:
+  push:
+    branches: [develop]
+  pull_request:
+    branches: [ develop ]
+
+jobs:
+  build:
+    name: Develop Branch Pipeline
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Setup Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 14.x
+    - name: Install dependencies
+      run: npm ci
+    - name: Check linter
+      run: npm run lint
+    - name: Run tests
+      run: npm run test
+    - name: Build
+      run: npm run build
