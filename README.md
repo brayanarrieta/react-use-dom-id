@@ -1,1 +1,1 @@
-# npm-typescript-react-library-template
+# react-use-id

@@ -1,5 +1,5 @@
 {
-  "name": "npm-typescript-react-library-template",
+  "name": "react-use-id",
   "version": "1.0.0",
   "description": "",
   "main": "dist/cjs/index.js",
@@ -14,8 +14,8 @@
   "scripts": {
     "commit": "cz",
     "clean": "del ./dist/*",
-    "lint": "eslint '**/*.ts'",
-    "lint:fix": "eslint '**/*.ts' --fix",
+    "lint": "eslint --ext=.tsx,.ts  .",
+    "lint:fix": "eslint --ext=.tsx,.ts . --fix",
     "test": "jest --passWithNoTests",
     "release": "semantic-release",
     "build:ts": "rollup -c",
@@ -24,15 +24,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brayanarrieta/npm-typescript-react-library-template.git"
+    "url": "git+https://github.com/brayanarrieta/react-use-id.git"
   },
   "keywords": [],
   "author": "brayanarrieta",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/brayanarrieta/npm-typescript-react-library-template/issues"
+    "url": "https://github.com/brayanarrieta/react-use-id/issues"
   },
-  "homepage": "https://github.com/brayanarrieta/npm-typescript-react-library-template#readme",
+  "homepage": "https://github.com/brayanarrieta/react-use-id#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.1.3",
