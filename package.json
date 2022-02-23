@@ -1,7 +1,7 @@
 {
   "name": "react-use-id",
   "version": "1.0.0",
-  "description": "",
+  "description": "Library to generate unique and deterministic ids for React components",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "cjs": "dist/cjs/index.js",
@@ -26,7 +26,15 @@
     "type": "git",
     "url": "git+https://github.com/brayanarrieta/react-use-id.git"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "component",
+    "key",
+    "id",
+    "hooks",
+    "dom",
+    "unique"
+  ],
   "author": "brayanarrieta",
   "license": "MIT",
   "bugs": {
