@@ -1,3 +1,3 @@
-import useId from './useId';
+import useId from './hooks/useId';
 
 export { useId };

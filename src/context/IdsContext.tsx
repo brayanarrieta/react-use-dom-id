@@ -1,9 +1,9 @@
 import React from 'react';
-import { DEFAULT_ID_SEPARATOR, DEFAULT_INITIAL_ID_NAMESPACE_COUNTER, DEFAULT_NAMESPACE } from './constants';
+import { DEFAULT_ID_SEPARATOR, DEFAULT_INITIAL_ID_NAMESPACE_COUNTER, DEFAULT_NAMESPACE } from '../constants';
 
-const counterNamespaces : {[key: string]: number} = {};
+let counterNamespaces : {[key: string]: number} = {};
 
-const context = React.createContext({
+const IdsContext = React.createContext({
   generateId(namespacePrefix?: string) {
     const namespace = namespacePrefix || DEFAULT_NAMESPACE;
 
@@ -16,4 +16,8 @@ const context = React.createContext({
   },
 });
 
-export default context;
+export const resetIdsContext = () => {
+  counterNamespaces = {};
+};
+
+export default IdsContext;

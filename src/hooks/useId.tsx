@@ -1,9 +1,9 @@
 import React from 'react';
-import CounterNamespacesContext from './CounterNamespacesContext';
+import IdsContext from '../context/IdsContext';
 
 const useId = (namespacePrefix?: string) => {
   const [id, setId] = React.useState<string | null>(null);
-  const { generateId } = React.useContext(CounterNamespacesContext);
+  const { generateId } = React.useContext(IdsContext);
 
   React.useEffect(() => {
     const newId = generateId(namespacePrefix);
