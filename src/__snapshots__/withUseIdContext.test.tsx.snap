@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`withUseId when not pass a namespace prefix should generate a unique id with the default namespace and pass as id prop 1`] = `
+<div>
+  <div
+    id="app-1"
+  />
+</div>
+`;
+
+exports[`withUseId when not pass namespaces should generate unique ids 1`] = `
+<div>
+  <div
+    id="app-1"
+  />
+</div>
+`;
+
+exports[`withUseId when not pass namespaces should generate unique ids 2`] = `
+<div>
+  <div
+    id="app-2"
+  />
+</div>
+`;
+
+exports[`withUseId when pass a namespace prefix context and override with the namespace prefix param it the new one should be part of the unique id 1`] = `
+<div>
+  <div
+    id="new-test-namespace-1"
+  />
+</div>
+`;
+
+exports[`withUseId when pass a namespace prefix context it should be part of the unique id 1`] = `
+<div>
+  <div
+    id="test-namespace-1"
+  />
+</div>
+`;

@@ -1,7 +1,7 @@
 {
-  "name": "npm-typescript-react-library-template",
+  "name": "react-use-id",
   "version": "1.0.0",
-  "description": "",
+  "description": "Library to generate unique and deterministic ids for React components",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "cjs": "dist/cjs/index.js",
@@ -14,9 +14,9 @@
   "scripts": {
     "commit": "cz",
     "clean": "del ./dist/*",
-    "lint": "eslint '**/*.ts'",
-    "lint:fix": "eslint '**/*.ts' --fix",
-    "test": "jest --passWithNoTests",
+    "lint": "eslint --ext=.tsx,.ts  .",
+    "lint:fix": "eslint --ext=.tsx,.ts . --fix",
+    "test": "jest",
     "release": "semantic-release",
     "build:ts": "rollup -c",
     "build:types": "tsc",
@@ -24,15 +24,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brayanarrieta/npm-typescript-react-library-template.git"
+    "url": "git+https://github.com/brayanarrieta/react-use-id.git"
   },
-  "keywords": [],
+  "keywords": [
+    "react",
+    "component",
+    "key",
+    "id",
+    "hooks",
+    "dom",
+    "unique"
+  ],
   "author": "brayanarrieta",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/brayanarrieta/npm-typescript-react-library-template/issues"
+    "url": "https://github.com/brayanarrieta/react-use-id/issues"
   },
-  "homepage": "https://github.com/brayanarrieta/npm-typescript-react-library-template#readme",
+  "homepage": "https://github.com/brayanarrieta/react-use-id#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.1.3",
@@ -41,6 +49,8 @@
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
+    "@testing-library/react": "^12.1.3",
+    "@testing-library/react-hooks": "^7.0.2",
     "@types/jest": "^27.4.0",
     "@types/react": "^16.14.23",
     "@types/react-dom": "^16.9.14",
@@ -65,12 +75,12 @@
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-visualizer": "^5.5.4",
     "semantic-release": "^19.0.2",
+    "ts-jest": "^27.1.3",
     "typescript": "^4.5.5"
   },
   "peerDependencies": {
     "prop-types": "^15.8.1",
-    "react": "^16.12.0 || ^17",
-    "react-dom": "^16.12.0 || ^17"
+    "react": "^16.12.0 || ^17"
   },
   "config": {
     "commitizen": {
