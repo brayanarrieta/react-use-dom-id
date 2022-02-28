@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/brayanarrieta/react-use-dom-id/compare/v1.0.0...v1.0.1) (2022-02-28)
+
+
+### Bug Fixes
+
+* remove prop-types as peer dependency ([158e3a6](https://github.com/brayanarrieta/react-use-dom-id/commit/158e3a6dc1c3523927217a558c3335c92272c77b))
+
 # 1.0.0 (2022-02-28)
 
 

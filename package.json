@@ -1,6 +1,6 @@
 {
   "name": "react-use-dom-id",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Library to generate unique and deterministic ids for React components",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
