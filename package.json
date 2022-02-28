@@ -1,5 +1,5 @@
 {
-  "name": "react-use-id",
+  "name": "react-use-dom-id",
   "version": "1.0.0",
   "description": "Library to generate unique and deterministic ids for React components",
   "main": "dist/cjs/index.js",
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brayanarrieta/react-use-id.git"
+    "url": "git+https://github.com/brayanarrieta/react-use-dom-id.git"
   },
   "keywords": [
     "react",
@@ -38,9 +38,9 @@
   "author": "brayanarrieta",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/brayanarrieta/react-use-id/issues"
+    "url": "https://github.com/brayanarrieta/react-use-dom-id/issues"
   },
-  "homepage": "https://github.com/brayanarrieta/react-use-id#readme",
+  "homepage": "https://github.com/brayanarrieta/react-use-dom-id#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.1.3",

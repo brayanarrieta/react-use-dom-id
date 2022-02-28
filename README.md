@@ -1,4 +1,4 @@
-# react-use-id
+# react-use-dom-id
 
 Library to generate unique and deterministic ids for React components.
 ## Install
@@ -6,13 +6,13 @@ Library to generate unique and deterministic ids for React components.
 ### NPM
 
 ```
-npm i --save react-use-id
+npm i --save react-use-dom-id
 ```
 
 ### Yarn
 
 ```
-yarn add react-use-id
+yarn add react-use-dom-id
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ yarn add react-use-id
 
 ```javascript
 import React from "react";
-import { useId } from "react-use-id";
+import { useId } from "react-use-dom-id";
 
 const RadioButton = ({ children, ...rest }) => {
   const radioButtonId = useId('my-prefix');
@@ -43,7 +43,7 @@ const RadioButton = ({ children, ...rest }) => {
 
 ```javascript
 import React from "react";
-import { useIdContext } from "react-use-id";
+import { useIdContext } from "react-use-dom-id";
 
 const RadioButton = ({ children, ...rest }) => {
   const 
@@ -66,7 +66,7 @@ const RadioButton = ({ children, ...rest }) => {
 ```javascript
 
 import React, { Component } from 'react';
-import { withUseIdContext } from 'react-use-id';
+import { withUseIdContext } from 'react-use-dom-id';
 
 class RadioButton extends Component {
   render() {
